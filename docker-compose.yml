@@ -1,0 +1,11 @@
+version: '2.3'
+
+services:
+    test:
+        build:
+            context: .
+        image: local/docker-torch7-cuda10-cudnn
+        runtime: nvidia
+        ports: 
+            - 8001:8888
+
